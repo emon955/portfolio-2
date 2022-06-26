@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    overflow: hidden;
+}
 /* nav start here */
 nav{
     position: fixed;
@@ -40,17 +43,21 @@ nav{
     display: flex;
     width: 100%;
 }
-.left-side{
+/* .left-side{
     width: 40%;
     height: 100vh;
     position: relative;
+} */
+.left-sides{
+    width: 50%;
 }
 .left-side .content-inner{
     position: absolute;
     top: 50%;
-    right: -120px;
+    left: 125px;
+    /* right: -120px; */
     transform: translateY(-50%);
-    z-index: 4;
+    z-index: 8;
     margin: 0;
     padding: 0;
     line-height: 1.1;
@@ -82,7 +89,7 @@ nav{
     font-family: 'poppins';
 }
 .right-side{
-    width: 84%;
+    width: 100%;
     height: 100vh;
 }
 
@@ -138,3 +145,9 @@ section{
     background-size: cover;
 }
 /* banner section end here */
+/* Responsive */
+@media (max-width:1050px){
+    .left-sides{
+        display: none;
+    }
+}

@@ -39,15 +39,10 @@ nav{
 }
 /* nav end here */
 /* banner section start here */
-.banner{
+/* .banner{
     display: flex;
     width: 100%;
 }
-/* .left-side{
-    width: 40%;
-    height: 100vh;
-    position: relative;
-} */
 .left-sides{
     width: 50%;
 }
@@ -55,7 +50,6 @@ nav{
     position: absolute;
     top: 50%;
     left: 125px;
-    /* right: -120px; */
     transform: translateY(-50%);
     z-index: 8;
     margin: 0;
@@ -95,7 +89,7 @@ nav{
 
 h1{
     color: white;
-}
+} */
 section{
     height: 100vh;
     width: 100%;

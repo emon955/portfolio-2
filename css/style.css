@@ -68,9 +68,10 @@ section{
     z-index: 3;
 }
 .slide-1{
-    background-image: url(https://images.pexels.com/photos/6140907/pexels-photo-6140907.jpeg?auto=compress&cs=tinysrgb&w=1200);
+    background-image: url(https://images.pexels.com/photos/7241540/pexels-photo-7241540.jpeg?auto=compress&cs=tinysrgb&w=1200);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .slide-2{
     background-image: url(https://images.pexels.com/photos/5910937/pexels-photo-5910937.jpeg?auto=compress&cs=tinysrgb&w=1200);

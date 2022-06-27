@@ -29,6 +29,7 @@ nav{
     margin: 0;
     padding: 0;
     margin-left: 35px;
+    margin-top: 22px;
 }
 .nav-container ul li a{
     text-decoration: none;
@@ -37,6 +38,9 @@ nav{
     font-size: 15px;
     color: #000;
 }
+.bar-menu{
+    display: none;
+}
 /* nav end here */
 /* banner section start here */
 .content-inner{
@@ -44,7 +48,7 @@ nav{
     top: 50%;
     left: 125px;
     transform: translateY(-50%);
-    z-index: 8;
+    z-index: 4;
     margin: 0;
     padding: 0;
     line-height: 1.1;
@@ -131,7 +135,34 @@ section{
 }
 /* banner section end here */
 /* Responsive */
-@media (max-width:1050px){
+@media (max-width:750px){
+    .bar-menu{
+        display: block;
+    }
+    .bar-menu i{
+        font-size: 26px;
+    }
+    .logo img{
+        width: 42px;
+    }
+    nav {
+        background-color: #fff;
+        border-bottom: 1px solid #000;
+    }
+    .nav-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .nav-container ul {
+        padding-top: 20px;
+        flex-direction: column;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        padding-bottom: 20px;
+    }
     section{
         position: absolute;
         top: 0;

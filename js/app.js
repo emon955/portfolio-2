@@ -1,3 +1,19 @@
+// navbar functionality
+const navMenu = document.getElementById('bar-menu')
+const nav = document.querySelector('.nav-container ul')
+navMenu.addEventListener('click',openNav)
+function openNav(){
+  if(nav.classList.contains('active')){
+    nav.classList.remove('active')
+  }else{
+    nav.classList.add("active")
+  }
+}
+
+
+
+
+
 const slides = Array.from(document.querySelectorAll('.slide'));
 const slider = document.querySelector('.slider');
 const buttons = document.querySelectorAll('.button div');

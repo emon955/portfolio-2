@@ -38,7 +38,7 @@ nav{
     font-size: 15px;
     color: #000;
 }
-.bar-menu{
+#bar-menu{
     display: none;
 }
 /* nav end here */
@@ -146,10 +146,11 @@ nav{
 /* banner section end here */
 /* Responsive */
 @media (max-width:750px){
-    .bar-menu{
+    #bar-menu{
         display: block;
+        cursor: pointer;
     }
-    .bar-menu i{
+    #bar-menu i{
         font-size: 26px;
     }
     .logo img{
@@ -174,6 +175,11 @@ nav{
         background-color: #fff;
         width: 100%;
         padding-bottom: 20px;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+    .nav-container ul.active{
+        transform: translateX(0);
     }
     .nav-container ul li{
         margin: 0;
@@ -188,6 +194,24 @@ nav{
         height: 100%;
         width: 100%;
         overflow: hidden;
+    }
+    .content-inner{
+        left: 3%;
+    }
+    .banner-title{
+        font-size: 50px;
+        margin: 0!important;
+    }
+    .simple-title{
+        font-size: 50px;
+        margin-top: -11px;
+    }
+    .sub-title{
+        padding-top: 16px;
+        font-size: 16px;
+    }
+    .content-inner{
+        top: 60%;
     }
 }
 @media (max-width:500px){
@@ -205,5 +229,6 @@ nav{
     }
     .content-inner{
         left: 4%;
+        top: 60%;
     }
 }

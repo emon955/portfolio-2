@@ -225,6 +225,11 @@ nav{
 }
 /* about section end here */
 /* Responsive */
+@media (max-width:325px){
+    .about-right .title-holder .about-simple-title {
+        font-size: 30px;
+    }
+}
 @media (max-width:769px){
     nav {
         background-color: #fff;

@@ -142,6 +142,7 @@ function skillNextSlide(){
     skillautoLoop()
 }
 function skillPrevSlide(){
+    clearTimeout(skilltimeoutId)
     const [next,prev] = getskillNextPrevSlide()
     const skillslides = Array.from(document.querySelectorAll('.s-slide'))
     const CurrentSlide = document.querySelector('.s-slide.active')
@@ -160,6 +161,7 @@ function skillPrevSlide(){
     prev.style.transform = "translateX(0)";
     prev.classList.add('active')
     skillgetposition()
+    skillautoLoop()
 }
 let skilltimeoutId 
 function skillautoLoop(){

@@ -231,7 +231,6 @@ nav{
 /* skill section start here */
 .skill{
         margin-top: 147px;
-        margin-bottom: 147px;
 } 
 .skill .container{
     width: 100%;
@@ -287,7 +286,7 @@ nav{
   z-index: 3;
   transition: 0.5s ease transform;
 }
-.skill .container .row .skillSlider .slider-btn .arrow{
+.skill .container .row .skillSlider:hover .slider-btn .arrow{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -300,7 +299,7 @@ nav{
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid #e5e5e5!important;
-    transition: cubic-bezier(.25,.46,.45,.94) .3s;
+    transition: 0.4s hover;
 }
 .skill .container .row .skillSlider .slider-btn .arrow:hover{
     border: 1px solid #050505!important;
@@ -399,6 +398,11 @@ nav{
         padding-left: 0px;
     }
     /* about section end here */
+    /* skill section start here */
+    .skill .container .row{
+        width: 90%;
+    }
+    /* skill section end here */
 }
 @media (max-width:500px){
     .content-inner{
@@ -420,6 +424,15 @@ nav{
     .about-left {
         width: 100%;
         margin-bottom: 80px;
+    }
+    .des-header{
+        font-size: 23px;
+    }
+    .skill .container .row .skillSlider .slider .s-slide .web-text{
+        font-size: 17px;
+    }
+    .skill {
+        margin-top: 88px;
     }
 }
 @media (max-width:325px){

@@ -231,6 +231,7 @@ nav{
 /* skill section start here */
 .skill{
         margin-top: 147px;
+        margin-bottom: 147px;
 } 
 .skill .container{
     width: 100%;
@@ -252,6 +253,7 @@ nav{
 }
 .skill .container .row .skillSlider .slider .s-slide{
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
@@ -260,8 +262,10 @@ nav{
     justify-content: center;
     align-items: center;
     transform: translateX(100%);
+    background-color: red;
 }
 .skill .container .row .skillSlider .slider .s-slide.active{
+    z-index: 3;
     transform: translateX(0);
 }
 /* skill end start here */

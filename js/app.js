@@ -97,3 +97,32 @@ function getskillNextPrevSlide (){
     return [next,prev]
 }
 getskillNextPrevSlide()
+
+function skillgetposition(){
+    const [next,prev] = getskillNextPrevSlide()
+    const skillslides = Array.from(document.querySelectorAll('.s-slide'))
+    const skillActiveSlide = document.querySelector('.s-slide.active')
+    const skillActiveIndex = skillslides.indexOf(skillActiveSlide)
+    skillslides.forEach((slide,index)=>{
+        if(index === skillActiveIndex){
+            slide.style.transform = "translateX(0)";
+        }else if(slide === prev){
+            slide.style.transform = "translateX(-100%)";
+        }else if(slide === next){
+            slide.style.transform = "translateX(100%)";
+        }else{
+            slide.style.transform = "translateX(100%)";
+        }
+    })
+}
+function skillNextSlide(){
+    const [next,prev] = getskillNextPrevSlide()
+    const CurrentSlide = document.querySelector('.s-slide.active')
+    CurrentSlide.classList.remove('active')
+    CurrentSlide.style.transform = "translate(-100%)";
+    next.style.transform = "translateX(0)";
+    next.classList.add('active')
+    skillgetposition()
+}
+skillNextSlide()
+skillNextSlide()

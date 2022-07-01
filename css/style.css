@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,100;1,200;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,100;1,200;1,900&family=Roboto:wght@500&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -249,24 +249,73 @@ nav{
 .skill .container .row .mainSlider .slider{
     width: 100%;
     height: 100%;
-    position: absolute;
 }
 .skill .container .row .skillSlider .slider .s-slide{
     position: absolute;
     z-index: -1;
-    top: 0;
+    transform: translateY(-50%);
     left: 0;
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    text-align: center;
+    flex-direction: column;
     transform: translateX(100%);
-    background-color: red;
+}
+.skill .container .row .skillSlider .slider .s-slide .container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.skill .container .row .skillSlider .slider .s-slide .web-text{
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    color: #050505;
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+    line-height: 1.35294;
+}
+.icon img{
+    width: 60px;
 }
 .skill .container .row .skillSlider .slider .s-slide.active{
     z-index: 3;
     transform: translateX(0);
+}
+.skill .container .row .skillSlider .slider .s-slide.top{
+  z-index: 3;
+  transition: 0.5s ease transform;
+}
+.skill .container .row .skillSlider .slider-btn .arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #e5e5e5!important;
+    transition: cubic-bezier(.25,.46,.45,.94) .3s;
+}
+.skill .container .row .skillSlider .slider-btn .arrow:hover{
+    border: 1px solid #050505!important;
+}
+.skill .container .row .skillSlider .slider-btn .left{
+    left: 0px;
+}
+.skill .container .row .skillSlider .slider-btn .right{
+    right: 0px;
+}
+.des-header{
+    color: #000;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Poppins';
 }
 /* skill end start here */
 /* Responsive */

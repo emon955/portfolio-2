@@ -78,6 +78,10 @@ autoLoop()
 
 
 // skill slider slider
+const leftArrow = document.querySelector('.left')
+leftArrow.addEventListener('click',skillPrevSlide)
+const rightArrow = document.querySelector('.right')
+rightArrow.addEventListener('click',skillNextSlide)
 function getskillNextPrevSlide (){
     const skillslides = Array.from(document.querySelectorAll('.s-slide'))
     const skillActiveSlide = document.querySelector('.s-slide.active')
@@ -116,13 +120,51 @@ function skillgetposition(){
     })
 }
 function skillNextSlide(){
+    clearTimeout(skilltimeoutId)
     const [next,prev] = getskillNextPrevSlide()
+    const skillslides = Array.from(document.querySelectorAll('.s-slide'))
     const CurrentSlide = document.querySelector('.s-slide.active')
+
+    skillslides.forEach((slide)=>{
+        slide.classList.remove('top')
+        return;
+    })
+    if (CurrentSlide.classList.contains("top")) {
+        return;
+      }
+    CurrentSlide.classList.add("top");
+    next.classList.add("top");
     CurrentSlide.classList.remove('active')
     CurrentSlide.style.transform = "translate(-100%)";
     next.style.transform = "translateX(0)";
     next.classList.add('active')
     skillgetposition()
+    skillautoLoop()
 }
-skillNextSlide()
-skillNextSlide()
+function skillPrevSlide(){
+    const [next,prev] = getskillNextPrevSlide()
+    const skillslides = Array.from(document.querySelectorAll('.s-slide'))
+    const CurrentSlide = document.querySelector('.s-slide.active')
+    skillslides.forEach((slide)=>{
+        slide.classList.remove('top')
+        return;
+    })
+    if (CurrentSlide.classList.contains("top")) {
+        return;
+      }
+    CurrentSlide.classList.add("top");
+    prev.classList.add("top");
+
+    CurrentSlide.style.transform = "translate(100%)";
+    CurrentSlide.classList.remove('active')
+    prev.style.transform = "translateX(0)";
+    prev.classList.add('active')
+    skillgetposition()
+}
+let skilltimeoutId 
+function skillautoLoop(){
+    skilltimeoutId = setTimeout(()=>{
+        skillNextSlide();
+    },5000)
+}
+skillautoLoop()

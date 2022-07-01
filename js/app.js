@@ -52,12 +52,6 @@ function getposition(){
 
 }
 getposition()
-buttons.forEach((button)=>{
-    button.addEventListener('click',()=>{
-        if(button.classList.contains('next')) getNextSlide();
-        else if(button.classList.contains("prev")) getPrevSlide();
-    })
-})
 function getNextSlide(){
     clearTimeout(timeoutId)
     const currentSlide = document.querySelector('.slide.active')
@@ -75,25 +69,31 @@ function getNextSlide(){
     getposition()
     autoLoop()
 }
-function getPrevSlide(){
-    clearTimeout(timeoutId)
-    const currentSlide = document.querySelector('.slide.active')
-    const [next,prev] = getNextprev();
-    slides.forEach((slide)=>{
-        slide.classList.remove('top')
-    })
-    currentSlide.classList.add('top')
-    prev.classList.add('top')
-    currentSlide.classList.remove('active')
-    currentSlide.style.transform = 'translateX(100%)'
-    prev.classList.add('active');
-    prev.style.transform = 'translate(0)'
-    getposition()
-    autoLoop()
-}
 function autoLoop(){
     timeoutId = setTimeout(()=>{
         getNextSlide();
     },5000)
 }
 autoLoop()
+
+
+// skill slider slider
+function getskillNextPrevSlide (){
+    const skillslides = Array.from(document.querySelectorAll('.s-slide'))
+    const skillActiveSlide = document.querySelector('.s-slide.active')
+    const skillActiveIndex = skillslides.indexOf(skillActiveSlide)
+    
+    let next , prev;
+    if(skillActiveIndex===skillslides.length -1){
+        next = skillslides[0]
+    }else{
+         next = skillslides[skillActiveIndex + 1]
+    }
+    if(skillActiveIndex === 0){
+        prev = skillslides[skillslides.length -1 ]
+    }else{
+        prev = skillslides[skillActiveIndex - 1]
+    }
+    return [next,prev]
+}
+getskillNextPrevSlide()

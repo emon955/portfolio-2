@@ -228,6 +228,43 @@ nav{
     color: #54595F;
 }
 /* about section end here */
+/* skill section start here */
+.skill{
+        margin-top: 147px;
+} 
+.skill .container{
+    width: 100%;
+}  
+.skill .container .row{
+    width: 80%;
+    margin: 0 auto;
+}
+.skill .container .row .skillSlider{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.skill .container .row .mainSlider .slider{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.skill .container .row .skillSlider .slider .s-slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+}
+.skill .container .row .skillSlider .slider .s-slide.active{
+    transform: translateX(0);
+}
+/* skill end start here */
 /* Responsive */
 @media (max-width:769px){
     .logo img{

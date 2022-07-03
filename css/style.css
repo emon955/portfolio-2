@@ -262,22 +262,6 @@ nav{
     flex-direction: column;
     transform: translateX(100%);
 }
-.skill .container .row .skillSlider .slider .s-slide .container{
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-.skill .container .row .skillSlider .slider .s-slide .web-text{
-    font-family: "Roboto",sans-serif;
-    font-weight: 500;
-    color: #050505;
-    margin-bottom: 1.5rem;
-    font-size: 24px;
-    line-height: 1.35294;
-}
-.icon img{
-    width: 60px;
-}
 .skill .container .row .skillSlider .slider .s-slide.active{
     z-index: 3;
     transform: translateX(0);
@@ -285,6 +269,27 @@ nav{
 .skill .container .row .skillSlider .slider .s-slide.top{
   z-index: 3;
   transition: 0.5s ease transform;
+}
+.skill .container .row .skillSlider .slider .s-slide .container{
+    width: 80%;
+    margin: 0 auto;
+}
+.skill .container .row .skillSlider .slider .s-slide .container .icon img{
+    width: 60px;
+}
+.skill .container .row .skillSlider .slider .s-slide .container .description .des-header{
+    color: #000;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+.skill .container .row .skillSlider .slider .s-slide .description .web-text{
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    color: #050505;
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+    line-height: 1.35294;
 }
 .skill .container .row .skillSlider:hover .slider-btn .arrow{
     position: absolute;
@@ -301,20 +306,14 @@ nav{
     border: 1px solid #e5e5e5!important;
     transition: 0.4s hover;
 }
-.skill .container .row .skillSlider .slider-btn .arrow:hover{
-    border: 1px solid #050505!important;
-}
 .skill .container .row .skillSlider .slider-btn .left{
     left: 0px;
 }
 .skill .container .row .skillSlider .slider-btn .right{
     right: 0px;
 }
-.des-header{
-    color: #000;
-    font-size: 35px;
-    font-weight: 600;
-    font-family: 'Poppins';
+.skill .container .row .skillSlider .slider-btn .arrow:hover{
+    border: 1px solid #050505!important;
 }
 /* skill end start here */
 /* Responsive */
@@ -425,15 +424,17 @@ nav{
         width: 100%;
         margin-bottom: 80px;
     }
-    .des-header{
-        font-size: 23px;
-    }
-    .skill .container .row .skillSlider .slider .s-slide .web-text{
-        font-size: 17px;
-    }
+    /* skill slider section start here */
     .skill {
         margin-top: 88px;
     }
+    .skill .container .row .skillSlider .slider .s-slide .container .description .des-header{
+        font-size: 22px;
+    }
+    .skill .container .row .skillSlider .slider .s-slide .description .web-text{
+        font-size: 17px;
+    }
+     /* skill slider section end here */
 }
 @media (max-width:325px){
     .about-right .title-holder .about-simple-title {

@@ -45,7 +45,41 @@ nav{
     width: 100%;
     height: 100vh;
 }
-.main-slider{
+.banner .content-inner{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 4;
+}
+.banner .content-inner .banner-title{
+    -webkit-text-stroke: 1px #000;
+    font-size: 80px;
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.banner .content-inner .simple-title{
+    color: #000;
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: -23px;
+    line-height: 1.1;
+    font-family: 'Poppins';
+}
+.banner .content-inner .sub-title{
+    color: #767676;
+    display: inline-block;
+    font-style: italic;
+    font-weight: 200;
+    font-family: 'poppins';
+    padding-top: 16px;
+} 
+.banner .main-slider{
     position: absolute;
     top: 0;
     right: 0;
@@ -53,25 +87,18 @@ nav{
     width: 67%;
     overflow: hidden;
 }
-.slider{
+.banner .main-slider .slide{
     height: 100%;
     width: 100%;
-}
-.slide{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     transform: translateX(100%);
     z-index: -1;
 }
-.slide.active{
+.banner .main-slider .slide.active{
     transform: translateX(0);
     z-index: 3;
 }
-.slide.top{
+.banner .main-slider .slide.top{
     transition: .6s ease transform;
     z-index: 3;
 }
@@ -99,40 +126,6 @@ nav{
     background-size: cover;
     background-position: center;
 }
-.content-inner{
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    z-index: 4;
-}
-.banner-title{
-    -webkit-text-stroke: 1px #000;
-    font-size: 80px;
-    color: white;
-    font-weight: 600;
-    font-family: 'Poppins';
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-}
-.simple-title{
-    color: #000;
-    font-size: 80px;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin-top: -23px;
-    line-height: 1.1;
-    font-family: 'Poppins';
-}
-.sub-title{
-    color: #767676;
-    display: inline-block;
-    font-style: italic;
-    font-weight: 200;
-    font-family: 'poppins';
-    padding-top: 16px;
-} 
 /* banner section end here */
 /* about section start here */
 .about{
@@ -291,6 +284,9 @@ nav{
     font-size: 24px;
     line-height: 1.35294;
 }
+.skill .container .row .skillSlider .slider-btn .arrow{
+    display: none;
+}
 .skill .container .row .skillSlider:hover .slider-btn .arrow{
     position: absolute;
     top: 50%;
@@ -359,24 +355,23 @@ nav{
     #bar-menu i{
         font-size: 26px;
     }
-    .main-slider{
+    /* banner section start here */
+    .banner .main-slider{
         width: 100%;
     }
-    .content-inner{
-        top: 60%;
+    .banner .content-inner{
+        top: 70%;
+        left: 5%;
     }
-    .content-inner{
-        left: 10%;
-    }
-    .banner-title{
+    .banner .content-inner .banner-title{
         font-size: 50px;
         margin: 0!important;
     }
-    .simple-title{
+    .banner .content-inner .simple-title{
         font-size: 50px;
         margin-top: -11px;
     }
-    .sub-title{
+    .banner .content-inner .sub-title{
         padding-top: 16px;
         font-size: 16px;
     }
@@ -404,29 +399,12 @@ nav{
     /* skill section end here */
 }
 @media (max-width:500px){
-    .content-inner{
-        left: 5%;
-        top: 60%;
-    }
-    .banner-title{
-        font-size: 50px;
-        margin: 0!important;
-    }
-    .simple-title{
-        font-size: 50px;
-        margin-top: -11px;
-    }
-    .sub-title{
-        padding-top: 16px;
-        font-size: 16px;
-    }
-    .about-left {
-        width: 100%;
-        margin-bottom: 80px;
-    }
+    /* about section start here */
+    
+    /* about section end here */
     /* skill slider section start here */
     .skill {
-        margin-top: 88px;
+        margin-top: 76px;
     }
     .skill .container .row .skillSlider .slider .s-slide .container .description .des-header{
         font-size: 22px;

@@ -170,3 +170,15 @@ function skillautoLoop(){
     },5000)
 }
 skillautoLoop()
+
+// portfolio functionality added
+const portfolioOpen = document.getElementById('filter-open')
+const filterItem = document.querySelector('.filter .filter-item')
+portfolioOpen.addEventListener('click',(e)=>{
+    e.preventDefault();
+    if(filterItem.classList.contains('active')){
+        filterItem.classList.remove('active')
+    }else{
+        filterItem.classList.add('active')
+    }
+})

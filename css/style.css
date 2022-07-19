@@ -429,7 +429,7 @@ nav{
 #filter-open{
     width: 30px;
     height: 30px;
-    background-color: red;
+    position: relative;
 }
 /* Responsive */
 @media (max-width:769px){
@@ -519,30 +519,23 @@ nav{
         cursor: pointer;
     }
     /* skill section end here */
+    /* portfolio section start here */
     .portfolio .container .row .portfolio-title-holder {
         display: flex;
         flex-direction: row;
-        /* align-items: center; */
         flex-direction: column;
     }
     .title-left {
         width: 100%;
     }
     .portfolio .container .row .portfolio-title-holder .portfolio-title-right {
-        /* margin-left: auto; */
         display: flex;
-        /* flex-direction: row; */
-        /* align-items: center; */
         flex-direction: row-reverse;
-        display: flex;
-        /* display: block!important; */
         margin-top: 100px;
         justify-content: flex-end;
         width: 100%;
-        text-align: left;
-        /* display: flex; */
-        /* display: inline-block; */
     }
+    /* portfolio section start here */
 
 }
 @media (max-width:500px){

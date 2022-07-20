@@ -328,11 +328,6 @@ nav{
 .portfolio .container .row .portfolio-title-holder{
     padding: 195px 0px 108px;
 }
-.portfolio .container .row .portfolio-title-holder{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 .portfolio .container .row .portfolio-title-holder .title-left h3{
     text-transform: uppercase;
     font-weight: 900;
@@ -356,48 +351,6 @@ nav{
     white-space: nowrap;
     z-index: -1;
     opacity: .1;
-}
-.portfolio .container .row .portfolio-title-holder .portfolio-title-right{
-    margin-left: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.portfolio .container .row .portfolio-title-holder .portfolio-title-right .filter{
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.portfolio .container .row .portfolio-title-holder .portfolio-title-right .filter .filter-item{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    visibility: hidden;
-    opacity: 0;
-    transition: all .3s ease;
-}
-.portfolio .container .row .portfolio-title-holder .portfolio-title-right .filter .filter-item.active{
-    visibility: visible;
-    opacity: 1;
-}
-.portfolio .container .row .portfolio-title-holder .portfolio-title-right .filter .filter-item li{
-    margin: 0 30px 0 0;
-}
-.portfolio .container .row .portfolio-title-holder .portfolio-title-right .filter .filter-item  li a{
-    text-decoration: none;
-    color: #767676;
-    font-family: poppins;
-    font-weight: 500;
-}
-.portfolio .container .row .portfolio-title-holder .portfolio-title-right .filter .filter-item  li a.active{
-    color: #000;
-    font-family: poppins; 
-    font-weight: 500;
-}
-.portfolio .container .row .portfolio-title-holder .portfolio-title-right #filter-open i{
-    font-size: 30px;
 }
 .portfolio .container .row .filter-holder{
     width: 100%;
@@ -567,23 +520,8 @@ nav{
     .portfolio .container .row {
         width: 90%;
     }
-    .portfolio .container .row .portfolio-title-holder {
-        display: flex;
-        flex-direction: row;
-        flex-direction: column;
-    }
     .title-left {
         width: 100%;
-    }
-    .portfolio .container .row .portfolio-title-holder .portfolio-title-right {
-        display: flex;
-        flex-direction: row-reverse;
-        margin-top:43px;
-        justify-content: flex-end;
-        width: 100%;
-    }
-    .portfolio .container .row .portfolio-title-holder .portfolio-title-right .filter {
-        margin-left: 30px;
     }
     .portfolio .container .row .filter-holder .filter-row li {
         width: 50%;
@@ -624,9 +562,6 @@ nav{
     }
     .portfolio .container .row .filter-holder .filter-row .item footer .lan-list li {
         margin-right: 20px;
-    }
-    .portfolio .container .row .portfolio-title-holder .portfolio-title-right .filter .filter-item {
-        flex-wrap: wrap;
     }
     .portfolio {
         margin-top: 0px;

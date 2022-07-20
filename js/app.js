@@ -183,3 +183,24 @@ portfolioOpen.addEventListener('click',(e)=>{
     }
 })
 // portfolio functionality added
+const btn = document.querySelectorAll('.btn')
+const storeProduct = document.querySelectorAll('.item')
+console.log(btn)
+for (let i = 0; i < btn.length; i++) {
+    btn[i].addEventListener('click',(e)=>{
+       e.preventDefault()
+       const filter = e.target.dataset.filter;
+       storeProduct.forEach((product)=>{
+        if(filter === 'all'){
+            product.style.display='block'
+        }else{
+            if(product.classList.contains(filter)){
+                product.style.display='block'
+            }else{
+                product.style.display='none'
+            }
+        }
+    })
+    })
+}
+

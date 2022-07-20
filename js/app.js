@@ -182,3 +182,4 @@ portfolioOpen.addEventListener('click',(e)=>{
         filterItem.classList.add('active')
     }
 })
+// portfolio functionality added

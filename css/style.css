@@ -426,10 +426,81 @@ nav{
     height: 3px;
     background-color: #000;
 }
-#filter-open{
-    width: 30px;
-    height: 30px;
-    position: relative;
+.portfolio .container .row .filter-holder{
+    width: 100%;
+}
+.portfolio .container .row .filter-holder ul.filter-row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio .container .row .filter-holder .filter-row li{
+    width: 33.3333%;
+    display: block;
+    padding-right: 27px;
+    margin-bottom: 30px;
+}
+.portfolio .container .row .filter-holder .filter-row li:nth-child(3),
+.portfolio .container .row .filter-holder .filter-row li:nth-child(6){
+    padding-right: 0;
+}
+.portfolio .container .row .filter-holder .filter-row .item{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(23, 42, 69);
+    padding: 25px 35px;
+}
+.portfolio .container .row .filter-holder .filter-row .item .item-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.portfolio .container .row .filter-holder .filter-row .item .item-icon #folder-icon{
+    color: rgb(100, 255, 218);
+    font-size: 40px;
+}
+.portfolio .container .row .filter-holder .filter-row .item .item-icon #github{
+    color: rgb(100, 255, 218);
+    font-size: 21px;
+}
+.portfolio .container .row .filter-holder .filter-row .item .item-icon #external{
+    color: rgb(204, 214, 246);
+    font-size: 21px;
+    padding-left: 10px;
+    transition: .3s;
+}
+.portfolio .container .row .filter-holder .filter-row .item .item-icon #external:hover{
+    color: rgb(100, 255, 218);
+}
+.portfolio .container .row .filter-holder .filter-row .item .title{
+    margin-top: 10px;
+    color: rgb(204, 214, 246);
+    font-weight: 500;
+    font-family: poppins;
+    font-size: 20px;
+}
+.portfolio .container .row .filter-holder .filter-row .item .description p{
+    color: rgb(168, 178, 209);
+    font-size: 17px;
+    margin-top: 19px;
+    margin-bottom: 92px;
+}
+.portfolio .container .row .filter-holder .filter-row .item footer .lan-list{
+    display: inline-flex;
+}
+.portfolio .container .row .filter-holder .filter-row .item footer .lan-list li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.portfolio .container .row .filter-holder .filter-row .item footer .lan-list li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(136, 146, 176);
+    line-height: 1.75;
+    font-weight: 200;
+    font-family: poppins;
 }
 /* Responsive */
 @media (max-width:769px){
@@ -520,6 +591,9 @@ nav{
     }
     /* skill section end here */
     /* portfolio section start here */
+    .portfolio .container .row {
+        width: 90%;
+    }
     .portfolio .container .row .portfolio-title-holder {
         display: flex;
         flex-direction: row;
@@ -531,9 +605,12 @@ nav{
     .portfolio .container .row .portfolio-title-holder .portfolio-title-right {
         display: flex;
         flex-direction: row-reverse;
-        margin-top: 100px;
+        margin-top:43px;
         justify-content: flex-end;
         width: 100%;
+    }
+    .portfolio .container .row .portfolio-title-holder .portfolio-title-right .filter {
+        margin-left: 30px;
     }
     /* portfolio section start here */
 

@@ -346,10 +346,10 @@ nav{
     border: 1px solid #050505!important;
 }
 /* skill end start here */
-/* .portfolio{
+.portfolio{
     margin-top: 147px;
 }
-.portfolio .container{
+/* .portfolio .container{
     width: 100%;
     background-color: #F8F9FA;
 }
@@ -361,8 +361,11 @@ nav{
 } */
 /* .portfolio .container .row .portfolio-title-holder{
     padding: 195px 0px 108px;
+} */
+.portfolio-title-holder{
+    padding: 195px 0px 108px;
 }
-.portfolio .container .row .portfolio-title-holder .title-left h3{
+.portfolio-title-holder .title-left h3{
     text-transform: uppercase;
     font-weight: 900;
     font-size: 35px;
@@ -372,45 +375,37 @@ nav{
     margin: 0;
     padding: 0;
 }
-.portfolio .container .row .portfolio-title-holder .title-left h3 .bg-title{
+.portfolio-title-holder .title-left h3 .bg-title{
     position: absolute;
     left: -4px;
     top: -56px;
     font-weight: 900;
     font-family: poppins;
-    font-size: 129px;
+    font-size: 150px;
     -webkit-text-stroke: 1px #000;
     color: transparent;
     line-height: 1;
     white-space: nowrap;
     z-index: -1;
     opacity: .1;
-} */
+}
 .filter-holder{
     width: 100%;
 }
 .filter-holder ul{
     width: 100%;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
 }
 .filter-holder ul li{
-    width: 33.3333%;
-  box-sizing: border-box;
-    padding-left: 27px;
+    width: 30.7%;
+    box-sizing: border-box;
     margin-bottom: 30px;
     list-style: none;
 }
-/* .filter-holder ul li:nth-child(1),
-.filter-holder ul li:nth-child(4)
-{
-    padding-left: 0;
-} */
-/* .filter-holder ul li:first-child{
-   padding-left: 0;
-} */
 .filter-holder ul li .item{
     width: 100%;
     background-color: rgb(23, 42, 69);
@@ -571,6 +566,9 @@ nav{
     .filter-holder ul li{
         width: 50%;
     }
+    .filter-holder ul li {
+        width: 48%;
+    }
     /* .filter-holder ul li:nth-child(2),
     .filter-holder ul li:nth-child(4){
         padding-right: 0;
@@ -613,7 +611,7 @@ nav{
     }
      /* skill slider section end here */
      /* portfolio section start here */
-     .portfolio .container .row .filter-holder .filter-row li {
+     /* .portfolio .container .row .filter-holder .filter-row li {
         width: 100%;
     }
     .portfolio .container .row .filter-holder .filter-row li:nth-child(1),
@@ -635,6 +633,9 @@ nav{
     }
     .portfolio .container .row .portfolio-title-holder .portfolio-title-right {
         margin-top: 67px;
+    } */
+    .filter-holder ul li{
+        width: 100%;
     }
      /* portfolio section end here */
 }

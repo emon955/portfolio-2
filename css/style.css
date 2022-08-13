@@ -17,6 +17,7 @@ section{
 .row{
     display: flex;
 }
+
 /* nav start here */
 nav{
     position: fixed;
@@ -144,14 +145,6 @@ nav{
 .about{
     margin-top: 147px;
 }
-/* .container{
-    width: 100%;
-} */
-/* .about .row{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-} */
 .about-left{
     width: 40%;
     height: 350px;
@@ -238,46 +231,16 @@ nav{
 .skill{
         margin-top: 147px;
 } 
-/* .skill .container{
-    width: 100%;
-}   */
-/* .skill .container .row{
-    width: 80%;
-    margin: 0 auto;
-} */
-/* .skill .container .row .skillSlider{
-    position: relative;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-} */
 .skillSlider{
     position: relative;
     width: 100%;
     height: 300px;
     overflow: hidden;
 }
-/* .skill .container .row .slider{
-    width: 100%;
-    height: 100%;
-} */
 .skillSlider .slider{
     width: 100%;
     height: 100%;
 }
-/* .skill .container .row .skillSlider .slider .s-slide{
-    position: absolute;
-    z-index: -1;
-    transform: translateY(-50%);
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    transform: translateX(100%);
-} */
 .skillSlider .slider .s-slide{
     position: absolute;
     z-index: -1;
@@ -346,26 +309,14 @@ nav{
     border: 1px solid #050505!important;
 }
 /* skill end start here */
+/* portfolio section start here end here */
 .portfolio{
     margin-top: 147px;
 }
-/* .portfolio .container{
-    width: 100%;
-    background-color: #F8F9FA;
-}
-.portfolio .container .row{
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-    padding-bottom: 100px;
-} */
-/* .portfolio .container .row .portfolio-title-holder{
-    padding: 195px 0px 108px;
-} */
-.portfolio-title-holder{
+.sec-title{
     padding: 195px 0px 108px;
 }
-.portfolio-title-holder .title-left h3{
+.sec-title h3{
     text-transform: uppercase;
     font-weight: 900;
     font-size: 35px;
@@ -375,7 +326,7 @@ nav{
     margin: 0;
     padding: 0;
 }
-.portfolio-title-holder .title-left h3 .bg-title{
+.sec-title h3 .bg-title{
     position: absolute;
     left: -4px;
     top: -56px;
@@ -464,8 +415,15 @@ nav{
     font-family: poppins;
     padding-right: 20px;
 }
+/* portfolio section start here end here */
 /* Responsive */
 @media (max-width:769px){
+    .row{
+        flex-direction: column;
+    }
+    .container{
+        width: 90%;
+    }
     .logo img{
         width: 42px;
     }
@@ -531,20 +489,6 @@ nav{
     .about {
         margin-top: 76px;
     }
-    /* .about .row{
-        flex-direction: column;
-        width: 90%;
-    } */
-    /* .row{
-        flex-direction: column;
-        width: 90%;
-    } */
-    .row{
-        flex-direction: column;
-    }
-    .container{
-        width: 90%;
-    }
     .about-left{
         width: 100%;
         margin-bottom: 91px;
@@ -553,87 +497,34 @@ nav{
         width: 100%;
         padding-left: 0px;
     }
-    /* about section end here */
-    /* skill section start here */
-    /* .skill .container .row{
-        width: 90%;
-    } */
-    /* .portfolio .container .row .title-holder .portfolio-title-right #filter-open{
-        cursor: pointer;
-    } */
-    /* skill section end here */
-    /* portfolio section start here */
+    /* portfolio section start here*/
     .filter-holder ul li{
         width: 50%;
     }
     .filter-holder ul li {
         width: 48%;
     }
-    /* .filter-holder ul li:nth-child(2),
-    .filter-holder ul li:nth-child(4){
-        padding-right: 0;
-    } */
-    /* .filter-holder ul li:nth-child(3){
-        padding-right: 27px;
-    } */
-    /* .portfolio .container .row {
-        width: 90%;
-    } */
-    /* .title-left {
-        width: 100%;
-    }
-    .portfolio .container .row .filter-holder .filter-row li {
-        width: 50%;
-    }
-    .portfolio .container .row .filter-holder .filter-row li:nth-child(2),
-    .portfolio .container .row .filter-holder .filter-row li:nth-child(4){
-    padding-right: 0;
-    }
-    .portfolio .container .row .filter-holder .filter-row li:nth-child(3){
-        padding-right: 27px;
-    } */
-    /* portfolio section start here */
-
+    /* portfolio section end here*/
 }
 @media (max-width:500px){
     /* about section start here */
-
+  
     /* about section end here */
     /* skill slider section start here */
     .skill {
         margin-top: 76px;
     }
-    .skill .container .row .skillSlider .slider .s-slide .container .description .des-header{
+    .skillSlider .slider .s-slide .container .description .des-header{
         font-size: 22px;
     }
-    .skill .container .row .skillSlider .slider .s-slide .description .web-text{
+    .skillSlider .slider .s-slide .description .web-text{
         font-size: 17px;
     }
      /* skill slider section end here */
      /* portfolio section start here */
-     /* .portfolio .container .row .filter-holder .filter-row li {
-        width: 100%;
-    }
-    .portfolio .container .row .filter-holder .filter-row li:nth-child(1),
-    .portfolio .container .row .filter-holder .filter-row li:nth-child(3),
-    .portfolio .container .row .filter-holder .filter-row li:nth-child(5){
-        padding-right: 0;
-    }
-    .portfolio .container .row .filter-holder .filter-row .item footer .lan-list li {
-        margin-right: 20px;
-    }
-    .portfolio {
-        margin-top: 0px;
-    }
-    .portfolio .container .row .portfolio-title-holder .title-left h3 {
-        font-size: 31px;
-    }
-    .portfolio .container .row .portfolio-title-holder {
-        padding: 132px 0px 73px;
-    }
-    .portfolio .container .row .portfolio-title-holder .portfolio-title-right {
-        margin-top: 67px;
-    } */
+     .sec-title h3{
+        font-size: 32px;
+     }
     .filter-holder ul li{
         width: 100%;
     }
